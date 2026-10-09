@@ -1,60 +1,197 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>ASM Request Bot — Legal</title>
+  <meta name="description" content="Official Terms of Service and Privacy Policy for ASM Request Bot, operated by the Administrative Services Ministry.">
+  <title>ASM Request Bot | Legal Center</title>
+  <link rel="stylesheet" href="./style.css">
+
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      max-width: 760px;
-      margin: 60px auto;
-      padding: 24px;
-      line-height: 1.7;
-      color: #222;
-      background: #f5f7fa;
+    .hero {
+      padding: 12px 0 28px;
     }
-    main {
-      background: white;
-      padding: 32px;
+
+    .eyebrow {
+      display: inline-block;
+      padding: 5px 12px;
+      border-radius: 20px;
+      background: #eaf0fb;
+      color: #23395d;
+      font-size: 12px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    .hero h1 {
+      margin: 18px 0 12px;
+      font-size: clamp(30px, 5vw, 42px);
+    }
+
+    .hero p {
+      max-width: 620px;
+      color: #64748b;
+      font-size: 16px;
+    }
+
+    .section-label {
+      margin: 24px 0 14px;
+      font-size: 18px;
+    }
+
+    .policy-card {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin: 14px 0;
+      padding: 22px;
+      border: 1px solid #e2e8f0;
       border-radius: 12px;
-      border: 1px solid #ddd;
+      background: #fff;
+      color: #263244;
+      transition: border-color 0.2s, box-shadow 0.2s,
+                  transform 0.2s;
     }
-    h1 { color: #253858; }
-    a { color: #075ac8; }
-    .policy {
-      display: block;
-      margin: 16px 0;
-      padding: 16px;
-      border: 1px solid #ddd;
-      border-radius: 8px;
+
+    .policy-card:hover {
+      border-color: #356ac3;
+      box-shadow: 0 6px 20px rgba(35, 57, 93, 0.08);
+      transform: translateY(-2px);
       text-decoration: none;
     }
-    .policy:hover { background: #f0f5ff; }
+
+    .policy-icon {
+      display: flex;
+      flex-shrink: 0;
+      align-items: center;
+      justify-content: center;
+      width: 48px;
+      height: 48px;
+      border-radius: 10px;
+      background: #edf2fa;
+      font-size: 23px;
+    }
+
+    .policy-copy {
+      flex: 1;
+    }
+
+    .policy-copy strong {
+      display: block;
+      margin-bottom: 4px;
+      color: #23395d;
+      font-size: 17px;
+    }
+
+    .policy-copy span {
+      display: block;
+      color: #64748b;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    .arrow {
+      color: #356ac3;
+      font-size: 22px;
+    }
+
+    .notice {
+      margin-top: 26px;
+      padding: 18px;
+      border-left: 4px solid #356ac3;
+      border-radius: 6px;
+      background: #f3f6fb;
+      font-size: 14px;
+    }
+
+    .notice strong {
+      color: #23395d;
+    }
+
+    @media (max-width: 480px) {
+      .policy-card {
+        gap: 12px;
+        padding: 16px;
+      }
+
+      .policy-icon {
+        width: 40px;
+        height: 40px;
+        font-size: 19px;
+      }
+    }
   </style>
 </head>
+
 <body>
-  <main>
-    <h1>ASM Request Bot</h1>
-    <p>
-      Official legal documents for the Administrative Services
-      Ministry (ASM) request system.
-    </p>
+  <div class="container">
 
-    <a class="policy" href="terms.html">
-      <strong>Terms of Service</strong><br>
-      Rules and conditions for using ASM Request Bot.
-    </a>
+    <header class="header">
+      <div class="logo">A</div>
+      <div>
+        <p class="brand"><strong>ASM Request Bot</strong></p>
+        <p class="subtitle">Administrative Services Ministry</p>
+      </div>
+    </header>
 
-    <a class="policy" href="privacy.html">
-      <strong>Privacy Policy</strong><br>
-      Information about data collection, use, and privacy requests.
-    </a>
+    <main class="document">
+      <section class="hero">
+        <span class="eyebrow">Official Documentation</span>
 
-    <p>Operator: Administrative Services Ministry (ASM)</p>
-    <p>For questions, contact the official ASM support channel
-    on the ASM Discord server.</p>
-  </main>
+        <h1>Legal Center</h1>
+
+        <p>
+          Welcome to the official legal center for ASM Request Bot.
+          Review the terms governing use of the bot and learn how
+          information is handled when you submit an administrative
+          request through our Discord server.
+        </p>
+      </section>
+
+      <h2 class="section-label">Legal Documents</h2>
+
+      <a class="policy-card" href="./terms.html">
+        <div class="policy-icon">📜</div>
+        <div class="policy-copy">
+          <strong>Terms of Service</strong>
+          <span>
+            Learn the rules, responsibilities, and conditions
+            for using ASM Request Bot.
+          </span>
+        </div>
+        <span class="arrow" aria-hidden="true">→</span>
+      </a>
+
+      <a class="policy-card" href="./privacy.html">
+        <div class="policy-icon">🔒</div>
+        <div class="policy-copy">
+          <strong>Privacy Policy</strong>
+          <span>
+            Understand what information may be processed,
+            how it is used, and how to raise privacy concerns.
+          </span>
+        </div>
+        <span class="arrow" aria-hidden="true">→</span>
+      </a>
+
+      <div class="notice">
+        <strong>Need assistance?</strong>
+        <p>
+          For questions about the bot or these documents,
+          contact the official ASM support channel on the
+          ASM Discord server. Please do not share sensitive
+          personal information in public channels.
+        </p>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <p><strong>Administrative Services Ministry (ASM)</strong></p>
+      <p>Official ASM Request Bot Legal Documents</p>
+      <p>Effective date of current policies: October 9, 2026</p>
+    </footer>
+
+  </div>
 </body>
 </html>
